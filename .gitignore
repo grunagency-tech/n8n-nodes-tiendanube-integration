@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Build artifacts
+dist/
+
+# n8n credentials (SECURITY RISK if committed)
+credentials/
+
+# OS generated files
+.DS_Store
+Thumbs.db
