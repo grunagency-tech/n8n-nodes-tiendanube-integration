@@ -55,7 +55,7 @@ Receive real-time events from your store. Supports the following events:
 
 ## Support
 
-If you encounter any issues or have feature requests, please [open an issue](https://github.com/YOUR_USERNAME/n8n-nodes-tiendanube/issues) on GitHub.
+If you encounter any issues or have feature requests, please [open an issue](https://github.com/grunagency-tech/n8n-nodes-tiendanube-integration/issues) on GitHub.
 
 ## License
 

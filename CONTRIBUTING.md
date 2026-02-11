@@ -12,8 +12,8 @@ Thank you for your interest in contributing to this n8n community node!
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/n8n-nodes-tiendanube.git
-    cd n8n-nodes-tiendanube
+    git clone https://github.com/grunagency-tech/n8n-nodes-tiendanube-integration.git
+    cd n8n-nodes-tiendanube-integration
     ```
 
 2.  **Install dependencies:**
