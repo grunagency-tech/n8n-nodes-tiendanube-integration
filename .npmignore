@@ -1,0 +1,8 @@
+# Keep dist folder (compiled files)
+!dist/
+
+# Exclude source files (optional, but good practice to keep package small)
+nodes/**/*.ts
+credentials/**/*.ts
+.gitignore
+tsconfig.json

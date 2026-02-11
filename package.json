@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-tiendanube-integration",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "n8n nodes for Tiendanube (Nuvemshop) API integration",
   "keywords": [
     "n8n-community-node-package"

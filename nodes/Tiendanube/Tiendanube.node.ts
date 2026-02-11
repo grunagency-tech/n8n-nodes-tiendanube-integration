@@ -428,31 +428,10 @@ export class Tiendanube implements INodeType {
                             }
                         }
 
-                        if (Object.keys(simpleVariantData).length > 0) {
-                            // Logic to determine Variant ID:
-                            // 1. Check if user provided 'variant_id' explicitly (for multi-variant products).
-                            // 2. If not, auto-detect the main variant ID by fetching the product (fallback for simple products).
+                        // REMOVED: Logic to add variants to body for Product Update.
+                        // Tiendanube API (PUT /products/{id}) forbids sending 'variants' in the payload.
+                        // Updates to price/stock/sku must be done via the 'Product Variant' resource.
 
-                            if (additionalFields.variant_id) {
-                                simpleVariantData.id = additionalFields.variant_id;
-                            } else {
-                                // Auto-fetch logic
-                                try {
-                                    const productData = await tiendanubeApiRequest.call(this, 'GET', `products/${productId}`);
-                                    if (productData.variants && Array.isArray(productData.variants) && productData.variants.length > 0) {
-                                        simpleVariantData.id = productData.variants[0].id;
-                                    }
-                                } catch (error) {
-                                    // Ignore error
-                                }
-                            }
-
-                            if (body.variants && Array.isArray(body.variants) && body.variants.length > 0) {
-                                Object.assign(body.variants[0], simpleVariantData);
-                            } else {
-                                body.variants = [simpleVariantData];
-                            }
-                        }
 
                         // Simple fields
                         if (additionalFields.brand) body.brand = additionalFields.brand;
